@@ -62,11 +62,13 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
         setClosable(true);
         setTitle("Update Car");
 
+        ColorField.setName("Color"); // NOI18N
+
         jLabel9.setText("Color");
 
         jLabel11.setText("Status");
 
-        ModelNameField.setName(""); // NOI18N
+        ModelNameField.setName("Model Name"); // NOI18N
         ModelNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ModelNameFieldActionPerformed(evt);
@@ -77,6 +79,7 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel12.setText("Body Type");
 
+        ManufacturerField.setName("Manufacturer"); // NOI18N
         ManufacturerField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ManufacturerFieldActionPerformed(evt);
@@ -85,7 +88,11 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel2.setText("Manufacturer");
 
+        EngineSizeField.setName("Engine Size"); // NOI18N
+
         jLabel3.setText("Engine Size");
+
+        SeatCountField.setName("Number of seats"); // NOI18N
 
         jLabel4.setText("Number Of Seats");
 
@@ -108,9 +115,13 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel5.setText("Fuel Type");
 
+        RegistrationField.setName("Registration name"); // NOI18N
+
         jLabel6.setText("Registration Number");
 
         jLabel7.setText("WOF Expiry Date");
+
+        RentPerDayField.setName("Rent per day"); // NOI18N
 
         jLabel8.setText("Rent per day");
 
@@ -141,37 +152,20 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(WOFExpiryDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7))
-                                .addGap(38, 38, 38)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(RentedDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel16)))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(SaveButton)
-                                .addGap(16, 16, 16)))
+                            .addComponent(WOFExpiryDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7))
+                        .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(SearchButton)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(27, 27, 27)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel17)
-                                    .addComponent(ReturnDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(RentedDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel16))
+                        .addGap(27, 27, 27)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel17)
+                            .addComponent(ReturnDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(RegistrationField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(ModelNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(133, 133, 133))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -183,15 +177,25 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(ColorField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(RentPerDayField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(SeatCountField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(EngineSizeField, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(ManufacturerField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(FuelTypeField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(BodyTypeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(StatusField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(119, 119, 119)))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(RegistrationField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(SearchButton))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(ColorField, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(RentPerDayField, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(SeatCountField, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(EngineSizeField, javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(ManufacturerField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(FuelTypeField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(BodyTypeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(StatusField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(88, 88, 88)))
+                            .addComponent(ModelNameField, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SaveButton))
+                        .addGap(31, 31, 31)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -276,6 +280,12 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
         Car c = CarStore.searchCarByRegistration(regNo);
         //Check if registration number is already taken
             //Car model variables
+        if(CarStore.containsCar(regNo))
+        {
+         JOptionPane.showMessageDialog(this, "Sorry we have a Registration with the number");
+        }
+        else if(!GUIUtility.emptyInputValidation(this))
+        {
             c.setModelName(ModelNameField.getText());
             c.setManufacturer(ManufacturerField.getText());
             c.setEngineSize(Double.parseDouble(EngineSizeField.getText()));
@@ -309,6 +319,7 @@ public class UpdateCarIFrame extends javax.swing.JInternalFrame {
             ColorField.setText("");
             StatusField.setText("");
             **/
+        }
     }//GEN-LAST:event_SaveButtonActionPerformed
 
     private void WOFExpiryDatePickerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WOFExpiryDatePickerActionPerformed

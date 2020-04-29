@@ -182,7 +182,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="ModelNameField">
       <Properties>
-        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="Model Name" noResource="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ModelNameFieldActionPerformed"/>
@@ -194,6 +194,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="ManufacturerField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Manufacturer" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManufacturerFieldActionPerformed"/>
       </Events>
@@ -204,6 +207,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="EngineSizeField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Engine Size" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -211,6 +217,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="SeatCountField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Number Of Seats" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
@@ -223,6 +232,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="RegistrationField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Registration Number" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -235,6 +247,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="RentPerDayField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Rent per day" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
@@ -242,6 +257,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="ColorField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Color" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
@@ -249,6 +267,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="YearOfManufactureField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Year of manufacture" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="YearOfManufactureFieldActionPerformed"/>
       </Events>
@@ -277,11 +298,17 @@
       </Events>
     </Component>
     <Component class="org.jdesktop.swingx.JXDatePicker" name="WOFExpiryDatePicker">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="WOF Expiry" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WOFExpiryDatePickerActionPerformed"/>
       </Events>
     </Component>
     <Component class="org.jdesktop.swingx.JXDatePicker" name="RentedDatePicker">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Rented Date" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel16">
       <Properties>
@@ -289,6 +316,9 @@
       </Properties>
     </Component>
     <Component class="org.jdesktop.swingx.JXDatePicker" name="ReturnDatePicker">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Return Date" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel17">
       <Properties>

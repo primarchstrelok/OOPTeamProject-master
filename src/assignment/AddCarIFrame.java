@@ -63,7 +63,7 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         setClosable(true);
         setTitle("Add Car");
 
-        ModelNameField.setName(""); // NOI18N
+        ModelNameField.setName("Model Name"); // NOI18N
         ModelNameField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ModelNameFieldActionPerformed(evt);
@@ -72,6 +72,7 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel1.setText("Model Name");
 
+        ManufacturerField.setName("Manufacturer"); // NOI18N
         ManufacturerField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ManufacturerFieldActionPerformed(evt);
@@ -80,20 +81,31 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel2.setText("Manufacturer");
 
+        EngineSizeField.setName("Engine Size"); // NOI18N
+
         jLabel3.setText("Engine Size");
+
+        SeatCountField.setName("Number Of Seats"); // NOI18N
 
         jLabel4.setText("Number Of Seats");
 
         jLabel5.setText("Fuel Type");
 
+        RegistrationField.setName("Registration Number"); // NOI18N
+
         jLabel6.setText("Registration Number");
 
         jLabel7.setText("WOF Expiry Date");
 
+        RentPerDayField.setName("Rent per day"); // NOI18N
+
         jLabel8.setText("Rent per day");
+
+        ColorField.setName("Color"); // NOI18N
 
         jLabel9.setText("Color");
 
+        YearOfManufactureField.setName("Year of manufacture"); // NOI18N
         YearOfManufactureField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 YearOfManufactureFieldActionPerformed(evt);
@@ -113,13 +125,18 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
             }
         });
 
+        WOFExpiryDatePicker.setName("WOF Expiry"); // NOI18N
         WOFExpiryDatePicker.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 WOFExpiryDatePickerActionPerformed(evt);
             }
         });
 
+        RentedDatePicker.setName("Rented Date"); // NOI18N
+
         jLabel16.setText("Rented Date");
+
+        ReturnDatePicker.setName("Return Date"); // NOI18N
 
         jLabel17.setText("Return Date");
 

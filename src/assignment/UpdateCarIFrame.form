@@ -28,50 +28,24 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="WOFExpiryDatePicker" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="RentedDatePicker" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="SaveButton" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                          </Group>
+                          <Component id="WOFExpiryDatePicker" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel7" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="SearchButton" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
-                                  <Component id="ReturnDatePicker" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
+                          <Component id="RentedDatePicker" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel16" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                          <Component id="ReturnDatePicker" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="RegistrationField" min="-2" pref="60" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="ModelNameField" min="-2" pref="60" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel6" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel2" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel3" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="1" min="-2" max="-2" attributes="0"/>
@@ -83,18 +57,32 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="ColorField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="RentPerDayField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="SeatCountField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="EngineSizeField" alignment="0" max="32767" attributes="0"/>
-                              <Component id="ManufacturerField" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                              <Component id="FuelTypeField" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="RegistrationField" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Component id="SearchButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="ColorField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="RentPerDayField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="SeatCountField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="EngineSizeField" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="ManufacturerField" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                          <Component id="FuelTypeField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="BodyTypeField" min="-2" max="-2" attributes="0"/>
+                                      <Component id="StatusField" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <Component id="BodyTypeField" min="-2" max="-2" attributes="0"/>
-                          <Component id="StatusField" min="-2" max="-2" attributes="0"/>
+                          <Component id="ModelNameField" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="SaveButton" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
@@ -187,6 +175,9 @@
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JTextField" name="ColorField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Color" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
@@ -200,7 +191,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="ModelNameField">
       <Properties>
-        <Property name="name" type="java.lang.String" value="" noResource="true"/>
+        <Property name="name" type="java.lang.String" value="Model Name" noResource="true"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ModelNameFieldActionPerformed"/>
@@ -217,6 +208,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="ManufacturerField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Manufacturer" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ManufacturerFieldActionPerformed"/>
       </Events>
@@ -227,6 +221,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="EngineSizeField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Engine Size" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
@@ -234,6 +231,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="SeatCountField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Number of seats" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
@@ -273,6 +273,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="RegistrationField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Registration name" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
@@ -285,6 +288,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="RentPerDayField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Rent per day" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
