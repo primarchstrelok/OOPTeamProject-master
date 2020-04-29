@@ -103,11 +103,13 @@ public class ListAvailableCarIFrame extends javax.swing.JFrame {
             Car c = CarStore.cars.get(i);
             if(c! =null)
             {
-                columns[0] = c.getName();
-                columns[1] = c.getGender();
-                columns[2] = c.getAddress();
-                columns[3] = c.getPhone();
-                
+                columns[0] = c.getModelName();
+                columns[1] = c.getManufacturer();
+                columns[2] = c.getRentPerDay();
+                columns[3] = c.getShopStatus();
+                columns[4] = c.getEngineSize();
+                columns[5] = c.getFuelType();
+                columns[6] = c.getSeatCount();
                 model.addRow(columns);
             }
         }
