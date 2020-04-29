@@ -216,6 +216,10 @@ public class MainForm extends javax.swing.JFrame {
 
     private void displayRentableCarsMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_displayRentableCarsMenuItemActionPerformed
         // TODO add your handling code here:
+        mainContentPane.removeAll();
+        ListAvailableCarsIFrame listavailablecarsframe = new ListAvailableCarsIFrame();
+        mainContentPane.add(listavailablecarsframe);
+        listavailablecarsframe.setVisible(true);
     }//GEN-LAST:event_displayRentableCarsMenuItemActionPerformed
 
     private void searchByRegistrationMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchByRegistrationMenuItemActionPerformed
