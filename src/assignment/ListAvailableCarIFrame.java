@@ -101,7 +101,7 @@ public class ListAvailableCarIFrame extends javax.swing.JFrame {
         for (int i =0; i< CarStore.cars.size(); i++)
         {
             Car c = CarStore.cars.get(i);
-            if(c instanceof New)
+            if(c! =null)
             {
                 columns[0] = c.getName();
                 columns[1] = c.getGender();
