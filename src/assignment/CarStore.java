@@ -38,16 +38,4 @@ public class CarStore {
         }
         return (Car) found;
     }
-    
-     public static void updateCar(String registrationNumber, Date WOFExpiryDate, double rentPerDay, String color, int yearOfManufacture, ShopStatus shopStatus, Date rentDate, Date returnDate, CarModel carModel)
-     {
-       Car c = searchCarByRegistration(registrationNumber);
-                c.setWOFExpiryDate(WOFExpiryDate);
-                c.setRentPerDay(rentPerDay);
-                c.setColor(color);
-                c.setShopStatus(shopStatus);
-                c.setRentDate(rentDate);
-                c.setReturnDate(returnDate);
-                c.setCarModel(carModel); 
-     }
 }
