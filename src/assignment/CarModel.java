@@ -21,7 +21,7 @@ public class CarModel {
     public CarModel(String modelName, String manufacturer, double engineSize, int seatCount, FuelType fuelType, CarBodyType bodyType) {
         this.modelName = modelName;
         this.manufacturer = manufacturer;
-        this.engineSize = engineSize;
+        setEngineSize(engineSize);
         this.seatCount = seatCount;
         this.fuelType = fuelType;
         this.bodyType = bodyType;
@@ -51,7 +51,12 @@ public class CarModel {
     }
 
     public void setEngineSize(double engineSize) {
-        this.engineSize = engineSize;
+        if(engineSize >0) {
+            this.engineSize = engineSize;
+        }
+        else {
+           throw new RuntimeException("Please enter a positive number for Engine Size");
+        }
     }
 
     public int getSeatCount() {
