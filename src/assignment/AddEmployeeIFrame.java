@@ -56,6 +56,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel1.setText("Employee ID:");
 
+        employeeIDTextField.setName("ID"); // NOI18N
         employeeIDTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 employeeIDTextFieldActionPerformed(evt);
@@ -64,6 +65,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel2.setText("Name:");
 
+        nameTextField.setName("Name"); // NOI18N
         nameTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nameTextFieldActionPerformed(evt);
@@ -74,6 +76,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel4.setText("DOB: dd/mm/yyyy");
 
+        DOBTextField.setName("DOB"); // NOI18N
         DOBTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 DOBTextFieldActionPerformed(evt);
@@ -82,6 +85,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel7.setText("Address:");
 
+        addressTextField.setName("Address"); // NOI18N
         addressTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addressTextFieldActionPerformed(evt);
@@ -90,6 +94,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel8.setText("Phone:");
 
+        phoneTextField.setName("phone"); // NOI18N
         phoneTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 phoneTextFieldActionPerformed(evt);
@@ -98,6 +103,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel9.setText("Phone Extention Number:");
 
+        phoneExtentionTextField.setName("phone extention"); // NOI18N
         phoneExtentionTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 phoneExtentionTextFieldActionPerformed(evt);
@@ -106,6 +112,7 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
 
         jLabel10.setText("User Name:");
 
+        userNameTextField.setName("user name"); // NOI18N
         userNameTextField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 userNameTextFieldActionPerformed(evt);
@@ -120,6 +127,10 @@ public class AddEmployeeIFrame extends javax.swing.JInternalFrame {
                 addButtonActionPerformed(evt);
             }
         });
+
+        genderTextField.setName("gender"); // NOI18N
+
+        passwordTextField.setName("password"); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -18,7 +18,7 @@ public class GUIUtility {
     static public boolean emptyInputValidation(JInternalFrame iframe)
     {
         boolean isEmpty = false;
-        Component components[] = iframe.getComponents();
+        Component components[] = iframe.getContentPane().getComponents();
         for(int i =0; i< components.length;i++)
         {
             Component c = components[i];

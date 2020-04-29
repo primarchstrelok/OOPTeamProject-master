@@ -136,6 +136,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="employeeIDTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="ID" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="employeeIDTextFieldActionPerformed"/>
       </Events>
@@ -146,6 +149,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="nameTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Name" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="nameTextFieldActionPerformed"/>
       </Events>
@@ -161,6 +167,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="DOBTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="DOB" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DOBTextFieldActionPerformed"/>
       </Events>
@@ -171,6 +180,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="addressTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="Address" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addressTextFieldActionPerformed"/>
       </Events>
@@ -181,6 +193,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="phoneTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="phone" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phoneTextFieldActionPerformed"/>
       </Events>
@@ -191,6 +206,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="phoneExtentionTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="phone extention" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="phoneExtentionTextFieldActionPerformed"/>
       </Events>
@@ -201,6 +219,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="userNameTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="user name" noResource="true"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="userNameTextFieldActionPerformed"/>
       </Events>
@@ -219,8 +240,14 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="genderTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="gender" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="passwordTextField">
+      <Properties>
+        <Property name="name" type="java.lang.String" value="password" noResource="true"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator1">
     </Component>
