@@ -220,10 +220,19 @@ public class MainForm extends javax.swing.JFrame {
 
     private void searchByRegistrationMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchByRegistrationMenuItemActionPerformed
         // TODO add your handling code here:
+        // whooops
+        mainContentPane.removeAll();
+        SearchByRegistration searchbyregNoframe = new SearchByRegistration();
+        mainContentPane.add(searchbyregNoframe);
+        searchbyregNoframe.setVisible(true);
     }//GEN-LAST:event_searchByRegistrationMenuItemActionPerformed
 
     private void updateCarMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateCarMenuItemActionPerformed
         // TODO add your handling code here:
+        mainContentPane.removeAll();
+        UpdateCarIFrame updatecarframe = new UpdateCarIFrame();
+        mainContentPane.add(updatecarframe);
+        updatecarframe.setVisible(true);
     }//GEN-LAST:event_updateCarMenuItemActionPerformed
 
     /**
