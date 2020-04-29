@@ -38,7 +38,6 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         jLabel3 = new javax.swing.JLabel();
         SeatCountField = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        FuelTypeField = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         RegistrationField = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
@@ -49,9 +48,7 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         jLabel9 = new javax.swing.JLabel();
         YearOfManufactureField = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        BodyTypeField = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
-        StatusField = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
         AddButton = new javax.swing.JButton();
         WOFExpiryDatePicker = new org.jdesktop.swingx.JXDatePicker();
@@ -59,6 +56,9 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         jLabel16 = new javax.swing.JLabel();
         ReturnDatePicker = new org.jdesktop.swingx.JXDatePicker();
         jLabel17 = new javax.swing.JLabel();
+        FuelTypeField = new javax.swing.JComboBox<>();
+        BodyTypeField = new javax.swing.JComboBox<>();
+        StatusField = new javax.swing.JComboBox<>();
 
         setClosable(true);
         setTitle("Add Car");
@@ -84,12 +84,6 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel4.setText("Number Of Seats");
 
-        FuelTypeField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FuelTypeFieldActionPerformed(evt);
-            }
-        });
-
         jLabel5.setText("Fuel Type");
 
         jLabel6.setText("Registration Number");
@@ -108,19 +102,7 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
 
         jLabel10.setText("Year of manufacture");
 
-        BodyTypeField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BodyTypeFieldActionPerformed(evt);
-            }
-        });
-
         jLabel11.setText("Status");
-
-        StatusField.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                StatusFieldActionPerformed(evt);
-            }
-        });
 
         jLabel12.setText("Body Type");
 
@@ -140,6 +122,12 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         jLabel16.setText("Rented Date");
 
         jLabel17.setText("Return Date");
+
+        FuelTypeField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "petrol", "diesel", "hybrid" }));
+
+        BodyTypeField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "sedan", "hatchback", "van", "suv" }));
+
+        StatusField.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "available", "rented", "repairing" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -169,17 +157,17 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
                                     .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(StatusField)
-                                    .addComponent(BodyTypeField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(YearOfManufactureField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(ColorField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(RentPerDayField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(RegistrationField, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(FuelTypeField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(SeatCountField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(EngineSizeField, javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(ManufacturerField, javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(ModelNameField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(ModelNameField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(FuelTypeField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(BodyTypeField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(StatusField, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(143, 143, 143)
                                 .addComponent(AddButton)))
@@ -242,12 +230,12 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
                     .addComponent(YearOfManufactureField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(BodyTypeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel12))
+                    .addComponent(jLabel12)
+                    .addComponent(BodyTypeField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(StatusField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11))
+                    .addComponent(jLabel11)
+                    .addComponent(StatusField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -263,15 +251,11 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
                         .addComponent(jLabel16)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(RentedDatePicker, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void FuelTypeFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FuelTypeFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_FuelTypeFieldActionPerformed
 
     private void AddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddButtonActionPerformed
         // TODO add your handling code here:
@@ -289,15 +273,15 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
             String manufacturer = ManufacturerField.getText();
             double engineSize = Double.parseDouble(EngineSizeField.getText());
             int seatCount = Integer.parseInt(SeatCountField.getText());
-            FuelType fuelType = FuelType.valueOf(FuelTypeField.getText());
-            CarBodyType bodyType = CarBodyType.valueOf(BodyTypeField.getText());
+            FuelType fuelType = FuelType.valueOf(FuelTypeField.getSelectedItem().toString());
+            CarBodyType bodyType = CarBodyType.valueOf(BodyTypeField.getSelectedItem().toString());
             //Car individual variables
             String registrationNumber = RegistrationField.getText();
             Date WOFExpiryDate = WOFExpiryDatePicker.getDate();
             double rentPerDay = Double.parseDouble(RentPerDayField.getText());
             String color = ColorField.getText();
             int yearOfManufacture = Integer.parseInt(YearOfManufactureField.getText());
-            ShopStatus shopStatus = ShopStatus.valueOf(StatusField.getText());
+            ShopStatus shopStatus = ShopStatus.valueOf(StatusField.getSelectedItem().toString());
             Date rentDate = RentedDatePicker.getDate();
             Date returnDate = ReturnDatePicker.getDate();
             //Init car model
@@ -314,8 +298,8 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
             ManufacturerField.setText("");
             EngineSizeField.setText("");
             SeatCountField.setText("");
-            FuelTypeField.setText("");
-            BodyTypeField.setText("");
+            FuelTypeField.setSelectedIndex(0);
+            BodyTypeField.setSelectedIndex(0);
             RegistrationField.setText("");
             WOFExpiryDatePicker.setDate(now);
             RentedDatePicker.setDate(now);
@@ -323,7 +307,7 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
             RentPerDayField.setText("");
             ColorField.setText("");
             YearOfManufactureField.setText("");
-            StatusField.setText("");
+            StatusField.setSelectedIndex(0);
         }
     }//GEN-LAST:event_AddButtonActionPerformed
 
@@ -335,10 +319,6 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ModelNameFieldActionPerformed
 
-    private void BodyTypeFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BodyTypeFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_BodyTypeFieldActionPerformed
-
     private void WOFExpiryDatePickerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WOFExpiryDatePickerActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_WOFExpiryDatePickerActionPerformed
@@ -347,17 +327,13 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_YearOfManufactureFieldActionPerformed
 
-    private void StatusFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_StatusFieldActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_StatusFieldActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddButton;
-    private javax.swing.JTextField BodyTypeField;
+    private javax.swing.JComboBox<String> BodyTypeField;
     private javax.swing.JTextField ColorField;
     private javax.swing.JTextField EngineSizeField;
-    private javax.swing.JTextField FuelTypeField;
+    private javax.swing.JComboBox<String> FuelTypeField;
     private javax.swing.JTextField ManufacturerField;
     private javax.swing.JTextField ModelNameField;
     private javax.swing.JTextField RegistrationField;
@@ -365,7 +341,7 @@ public class AddCarIFrame extends javax.swing.JInternalFrame {
     private org.jdesktop.swingx.JXDatePicker RentedDatePicker;
     private org.jdesktop.swingx.JXDatePicker ReturnDatePicker;
     private javax.swing.JTextField SeatCountField;
-    private javax.swing.JTextField StatusField;
+    private javax.swing.JComboBox<String> StatusField;
     private org.jdesktop.swingx.JXDatePicker WOFExpiryDatePicker;
     private javax.swing.JTextField YearOfManufactureField;
     private javax.swing.JLabel jLabel1;

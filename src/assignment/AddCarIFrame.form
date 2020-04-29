@@ -52,17 +52,17 @@
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="StatusField" max="32767" attributes="0"/>
-                                  <Component id="BodyTypeField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="YearOfManufactureField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="ColorField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="RentPerDayField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="RegistrationField" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="FuelTypeField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="SeatCountField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="EngineSizeField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="ManufacturerField" alignment="0" max="32767" attributes="0"/>
                                   <Component id="ModelNameField" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                  <Component id="FuelTypeField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="BodyTypeField" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="StatusField" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
@@ -146,13 +146,13 @@
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BodyTypeField" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BodyTypeField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="StatusField" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="StatusField" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -174,7 +174,7 @@
                       <Component id="RentedDatePicker" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -217,11 +217,6 @@
         <Property name="text" type="java.lang.String" value="Number Of Seats"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="FuelTypeField">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="FuelTypeFieldActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Fuel Type"/>
@@ -263,20 +258,10 @@
         <Property name="text" type="java.lang.String" value="Year of manufacture"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JTextField" name="BodyTypeField">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BodyTypeFieldActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel11">
       <Properties>
         <Property name="text" type="java.lang.String" value="Status"/>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JTextField" name="StatusField">
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="StatusFieldActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel12">
       <Properties>
@@ -309,6 +294,49 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Return Date"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="FuelTypeField">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="petrol"/>
+            <StringItem index="1" value="diesel"/>
+            <StringItem index="2" value="hybrid"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="BodyTypeField">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="4">
+            <StringItem index="0" value="sedan"/>
+            <StringItem index="1" value="hatchback"/>
+            <StringItem index="2" value="van"/>
+            <StringItem index="3" value="suv"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JComboBox" name="StatusField">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="3">
+            <StringItem index="0" value="available"/>
+            <StringItem index="1" value="rented"/>
+            <StringItem index="2" value="repairing"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>

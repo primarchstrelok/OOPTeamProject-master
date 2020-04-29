@@ -51,7 +51,7 @@ public class CarModel {
     }
 
     public void setEngineSize(double engineSize) {
-        if(engineSize >0) {
+        if(engineSize >=0) {
             this.engineSize = engineSize;
         }
         else {
