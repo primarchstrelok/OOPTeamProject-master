@@ -9,6 +9,6 @@ package assignment;
  *
  * @author david
  */
-public interface CarInterface {
-    String CarInterface();
+public class CarTest {
+    
 }
