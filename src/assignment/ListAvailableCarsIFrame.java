@@ -101,7 +101,7 @@ public class ListAvailableCarsIFrame extends javax.swing.JInternalFrame {
         for (int i =0; i< CarStore.cars.size(); i++)
         {
             Car c = CarStore.cars.get(i);
-            if(c instanceof CarInterface)
+            if(c.getShopStatus() == ShopStatus.available)
             {
                 columns[0] = c.getModelName();
                 columns[1] = c.getManufacturer();
