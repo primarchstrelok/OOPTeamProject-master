@@ -6,35 +6,28 @@
 package assignment;
 
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
  *
- * @author natyd
+ * @author kieran
  */
 public class CustomerTest {
+    Customer c = null;
     
     public CustomerTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
+     @Before
     public void setUp() {
+        c = new Customer("1", "5645NF1", LicenceType.LEARNER, "12/05/2024", "John", "M", "12/10/1945", "22 Harbor Rd", "5654423");
     }
     
     @After
     public void tearDown() {
+        c=null;
     }
 
     /**
@@ -42,13 +35,6 @@ public class CustomerTest {
      */
     @Test
     public void testNewCustomer() {
-        System.out.println("newCustomer");
-        Customer instance = null;
-        String expResult = "";
-        String result = instance.newCustomer();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -56,13 +42,6 @@ public class CustomerTest {
      */
     @Test
     public void testGetId() {
-        System.out.println("getId");
-        Customer instance = null;
-        String expResult = "";
-        String result = instance.getId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -70,12 +49,6 @@ public class CustomerTest {
      */
     @Test
     public void testSetId() {
-        System.out.println("setId");
-        String customerID = "";
-        Customer instance = null;
-        instance.setId(customerID);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -83,13 +56,6 @@ public class CustomerTest {
      */
     @Test
     public void testGetLicenceNumber() {
-        System.out.println("getLicenceNumber");
-        Customer instance = null;
-        String expResult = "";
-        String result = instance.getLicenceNumber();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -97,12 +63,8 @@ public class CustomerTest {
      */
     @Test
     public void testSetLicenceNumber() {
-        System.out.println("setLicenceNumber");
-        String licenceNumber = "";
-        Customer instance = null;
-        instance.setLicenceNumber(licenceNumber);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+ 
+
     }
 
     /**
@@ -110,13 +72,6 @@ public class CustomerTest {
      */
     @Test
     public void testGetLicenceType() {
-        System.out.println("getLicenceType");
-        Customer instance = null;
-        LicenceType expResult = null;
-        LicenceType result = instance.getLicenceType();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -124,12 +79,6 @@ public class CustomerTest {
      */
     @Test
     public void testSetLicenceType() {
-        System.out.println("setLicenceType");
-        LicenceType licenceType = null;
-        Customer instance = null;
-        instance.setLicenceType(licenceType);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -137,13 +86,6 @@ public class CustomerTest {
      */
     @Test
     public void testGetLicenceExpiry() {
-        System.out.println("getLicenceExpiry");
-        Customer instance = null;
-        String expResult = "";
-        String result = instance.getLicenceExpiry();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -151,12 +93,6 @@ public class CustomerTest {
      */
     @Test
     public void testSetLicenceExpiry() {
-        System.out.println("setLicenceExpiry");
-        String licenceExpiry = "";
-        Customer instance = null;
-        instance.setLicenceExpiry(licenceExpiry);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
