@@ -224,6 +224,10 @@ public class MainForm extends javax.swing.JFrame {
 
     private void updateCarMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateCarMenuItemActionPerformed
         // TODO add your handling code here:
+        mainContentPane.removeAll();
+        UpdateCarIFrame updatecarframe = new UpdateCarIFrame();
+        mainContentPane.add(updatecarframe);
+        updatecarframe.setVisible(true);
     }//GEN-LAST:event_updateCarMenuItemActionPerformed
 
     /**
